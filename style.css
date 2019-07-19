@@ -53,6 +53,7 @@ div.btn button {
     overflow: hidden;
     display: none;
     background: goldenrod;
+    padding: 5px;
 }
 
 .color {
