@@ -118,7 +118,7 @@ function clickCard() {
 
 }
 const hiddenCards = document.getElementById("hiddenCards");
-for (i = 0; i < 20; i++) {
+for (i = 0; i < 21; i++) {
     var x = document.createElement("IMG");
     x.setAttribute("src", 'images/' + i + '.png');
     x.style.display = "none";
