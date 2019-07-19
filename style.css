@@ -52,22 +52,22 @@ div.btn button {
     width: 100%;
     overflow: hidden;
     display: none;
+    background: goldenrod;
 }
 
 .color {
     flex-basis: 15%;
     flex-grow: 1;
-    /* height: 33.33vh; */
     border: 3px solid #653b1c;
     background-size: 100% 100%;
     border-radius: 8%;
+    margin: 1px;
 
 }
 
 
 
 .hiddenCard {
-    /* background-color: black !important; */
     background-image: url("images/hideCard.jpg") !important;
     transition: .2s;
     transform: rotateY(180deg);
