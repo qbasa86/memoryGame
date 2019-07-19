@@ -20,7 +20,8 @@ const init = function () {
         cards.forEach(function (card) {
             const position = Math.floor(Math.random() * easyColors.length)
             card.classList.add(easyColors[position])
-            card.style.background = 'url(images/' + easyColors[position] + '.png';
+            card.style.backgroundColor = 'white';
+            card.style.backgroundImage = 'url(images/' + easyColors[position] + '.png';
             card.style.backgroundSize = '100% 100%';
             easyColors.splice(position, 1)
         })
@@ -38,8 +39,9 @@ const init = function () {
         cards = [...cards]
         cards.forEach(function (card) {
             const position = Math.floor(Math.random() * hardColors.length)
-            card.classList.add(hardColors[position])
-            card.style.background = 'url(images/' + hardColors[position] + '.png';
+            card.classList.add(hardColors[position]);
+            card.style.backgroundColor = 'white';
+            card.style.backgroundImage = 'url(images/' + hardColors[position] + '.png';
             card.style.backgroundSize = '100% 100%';
             hardColors.splice(position, 1)
         })
