@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: grey;
+    display: flex;
+    align-items: center;
+    background: white;
+
+}
+
+div.choose {
+    background: #5c70a2;
+    align-items: center;
+    padding: 50px;
+
+    margin: 0 auto;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+div.choose h1 {
+    padding: 20px 0;
+}
+
+div.btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+div.btn button {
+    height: 50px;
+    flex-basis: 10%;
+    flex-grow: 1;
+
+}
+
+.divGame {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.color {
+    flex-basis: 15%;
+    flex-grow: 1;
+    /* height: 33.33vh; */
+    border: 3px solid #653b1c;
+    background-size: 100% 100%;
+    border-radius: 8%;
+
+}
+
+
+
+.hiddenCard {
+    /* background-color: black !important; */
+    background-image: url("images/hideCard.jpg") !important;
+    transition: .2s;
+    transform: rotateY(180deg);
+}
+
+.shake {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: linear;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.hard {
+    flex-basis: 12%;
+}
+
+@media (orientation: portrait) and (max-width: 992px) {
+    .colorEasy {
+        flex-basis: 26%;
+    }
+
+    .colorHard {
+
+        flex-basis: 19%;
+    }
+}
+
+@media (orientation: landscape) {
+
+
+    .colorHard {
+
+        flex-basis: 12%;
+    }
+}
+
+@-webkit-keyframes test {
+    0% {
+        background-image: url('images/birdVictory1.png');
+        background-size: 50% 50%;
+    }
+
+    50% {
+        background-size: 75% 75%;
+    }
+
+    100% {
+        background-image: url('images/birdVictory2.png');
+        background-size: 100% 100%;
+    }
+
+}
+
+.gameOver {
+
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-animation-name: test;
+    -webkit-animation-duration: .3s;
+
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+}
